@@ -2,7 +2,10 @@
 module.exports = {
   content: [
     "./**/*.html",
-    "./**/*.js",
+    // Only scan JS files in your project, not node_modules
+    "./js/**/*.js",
+    // If you have other JS files outside the js folder, add them here
+    // "./*.js",
     "./**/*.css"
   ],
   theme: {
